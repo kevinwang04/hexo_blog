@@ -13,7 +13,7 @@ timezone:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://kevinwang04.github.io
-root: /node_blog
+root: /hexo_blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -69,5 +69,5 @@ theme: landscape
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type:git
-  repo:kevinwang04/node_blog
+  repo:kevinwang04/hexo_blog
   branch:master
