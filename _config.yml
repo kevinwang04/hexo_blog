@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: hexo blog
-subtitle:hello friend~
-description:my hexo web
+title: kevinwang
+subtitle: kevinwang
+description:
 author: kevinwang
-language:zh
+language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://kevinwang04.github.io
-root: /hexo_blog
+url: http://yoursite.com
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -63,11 +63,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: TKL
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type:git
-  repo:kevinwang04/hexo_blog
-  branch:master
+deploy: 
+  type: git
+  repository: http://github.com/kevinwang04/hexo_blog.git
+  branch: gh-pages
