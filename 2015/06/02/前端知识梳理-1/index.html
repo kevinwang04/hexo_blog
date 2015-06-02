@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>前端知识梳理_1 | kevinwang</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="kevinwang">
+    <meta name="author" content="kevinwang">
+    <meta name="description" content="kevinwang" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="kevinwang" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">Kevin</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">kevinwang</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <!-- ============================ Hero Image =========================== -->
+
+        <section id="hero" class="scrollme">
+            <div class="container-fluid element-img" style="background: url(/img/1.jpg) no-repeat center center fixed">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                        <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                            <div>
+                            	
+                                <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
+                                <p></p>
+				    			
+                                <h2></h2>
+                                <p>你若盛开，清风自来</p>
+				    			
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // .col-md-12 -->
+                </div>
+                <div class="herofade beige-dk"></div>
+            </div>
+        </section>
+
+        <!-- Height spacing helper -->
+        <div class="heightblock"></div>
+        <!-- // End height spacing helper -->
+
+        <!-- ============================ END Hero Image =========================== -->
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2015-06-02T11:43:38.000Z" itemprop="datePublished">
+          2015-06-02
+      </time>
+    
+</span>
+                <h1>前端知识梳理_1</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h3 id="前端基础查漏">前端基础查漏</h3><hr>
+<hr>
+<ul>
+<li>doctype作用/行内块级元素/css空元素/两种盒子模型/</li>
+</ul>
+<ul>
+<li><p>link和@import的区别/css选择器种类?/哪些属性可以继承?/css3新增伪类/</p>
+<pre><code>css优先级就近/载入样式使用最后载入/!important &gt;内联 &gt; id &gt; class &gt; tag/ 新增伪类<span class="symbol">:first-of-type</span>,last-of-type,only-of-type,only-child,nth-child(),<span class="symbol">:enabled</span>,<span class="symbol">:disabled</span>,<span class="symbol">:checked</span>
+</code></pre></li>
+<li><p>div居中,浮动元素居中*/浏览器内核种类/常见兼容性问题原因及解决/</p>
+</li>
+<li><p>html5shim框架/</p>
+</li>
+<li><p>display:list-item/</p>
+</li>
+<li><p>淘宝的页面初始化:</p>
+<pre><code>      <span class="tag">body</span>, <span class="tag">h1</span>, <span class="tag">h2</span>, <span class="tag">h3</span>, <span class="tag">h4</span>, <span class="tag">h5</span>, <span class="tag">h6</span>, <span class="tag">hr</span>, <span class="tag">p</span>, <span class="tag">blockquote</span>, <span class="tag">dl</span>, <span class="tag">dt</span>, <span class="tag">dd</span>, <span class="tag">ul</span>, <span class="tag">ol</span>, <span class="tag">li</span>, <span class="tag">pre</span>, <span class="tag">form</span>, <span class="tag">fieldset</span>, <span class="tag">legend</span>, <span class="tag">button</span>, <span class="tag">input</span>, <span class="tag">textarea</span>, <span class="tag">th</span>, <span class="tag">td</span> <span class="rules">{ <span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span></span></span>; <span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0</span></span></span>; }</span>
+<span class="tag">body</span>, <span class="tag">button</span>, <span class="tag">input</span>, <span class="tag">select</span>, <span class="tag">textarea</span> <span class="rules">{ <span class="rule"><span class="attribute">font</span>:<span class="value"><span class="number">12px</span>/<span class="number">1.5</span>tahoma, arial, \<span class="number">5</span>b8b\<span class="number">4</span>f53</span></span>; }</span>
+<span class="tag">h1</span>, <span class="tag">h2</span>, <span class="tag">h3</span>, <span class="tag">h4</span>, <span class="tag">h5</span>, <span class="tag">h6</span><span class="rules">{ <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">100%</span></span></span>; }</span>
+<span class="tag">address</span>, <span class="tag">cite</span>, <span class="tag">dfn</span>, <span class="tag">em</span>, <span class="tag">var</span> <span class="rules">{ <span class="rule"><span class="attribute">font-style</span>:<span class="value">normal</span></span>; }</span>
+<span class="tag">code</span>, <span class="tag">kbd</span>, <span class="tag">pre</span>, <span class="tag">samp</span> <span class="rules">{ <span class="rule"><span class="attribute">font-family</span>:<span class="value">couriernew, courier, monospace</span></span>; }</span>
+<span class="tag">small</span><span class="rules">{ <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">12px</span></span></span>; }</span>
+<span class="tag">ul</span>, <span class="tag">ol</span> <span class="rules">{ <span class="rule"><span class="attribute">list-style</span>:<span class="value">none</span></span>; }</span>
+<span class="tag">a</span> <span class="rules">{ <span class="rule"><span class="attribute">text-decoration</span>:<span class="value">none</span></span>; }</span>
+<span class="rule"><span class="attribute">a</span>:<span class="value">hover { text-decoration:underline</span></span>; }
+<span class="tag">sup</span> <span class="rules">{ <span class="rule"><span class="attribute">vertical-align</span>:<span class="value">text-top</span></span>; }</span>
+<span class="tag">sub</span><span class="rules">{ <span class="rule"><span class="attribute">vertical-align</span>:<span class="value">text-bottom</span></span>; }</span>
+<span class="tag">legend</span> <span class="rules">{ <span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#000</span></span></span>; }</span>
+<span class="tag">fieldset</span>, <span class="tag">img</span> <span class="rules">{ <span class="rule"><span class="attribute">border</span>:<span class="value"><span class="number">0</span></span></span>; }</span>
+<span class="tag">button</span>, <span class="tag">input</span>, <span class="tag">select</span>, <span class="tag">textarea</span> <span class="rules">{ <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">100%</span></span></span>; }</span>
+<span class="tag">table</span> <span class="rules">{ <span class="rule"><span class="attribute">border-collapse</span>:<span class="value">collapse</span></span>; <span class="rule"><span class="attribute">border-spacing</span>:<span class="value"><span class="number">0</span></span></span>; }</span> <span class="rule"><span class="attribute">er-spacing</span>:<span class="value"><span class="number">0</span></span></span>; } 
+</code></pre></li>
+<li><p>absolute的containing block/margin collapse/对于BFC规范的理解/iframe的缺点:阻塞主页面的onload事件,影响页面并行加载/</p>
+</li>
+<li><p>css定义的权重:<br>  1.tag:1</p>
+<p>  2.class:10</p>
+<p>  3.id:100</p>
+</li>
+</ul>
+<p>权重相同,后定义者起作用</p>
+<ul>
+<li><p>eval的作用:把对应的字符串解析成js代码并运行/避免使用eval,不安全,消耗性能</p>
+</li>
+<li><p>通用的事件侦听函数:</p>
+<pre><code>    <span class="comment">// event(事件)工具集，来源：https://github.com/markyun</span>
+markyun.Event = {
+    <span class="comment">// 页面加载完成后</span>
+    readyEvent : <span class="function"><span class="keyword">function</span>(<span class="params">fn</span>) </span>{
+        <span class="keyword">if</span> (fn==<span class="literal">null</span>) {
+            fn=<span class="built_in">document</span>;
+        }
+        <span class="keyword">var</span> oldonload = <span class="built_in">window</span>.onload;
+        <span class="keyword">if</span> (<span class="keyword">typeof</span> <span class="built_in">window</span>.onload != <span class="string">'function'</span>) {
+            <span class="built_in">window</span>.onload = fn;
+        } <span class="keyword">else</span> {
+            <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{
+                oldonload();
+                fn();
+            };
+        }
+    },
+    <span class="comment">// 视能力分别使用dom0||dom2||IE方式 来绑定事件</span>
+    <span class="comment">// 参数： 操作的元素,事件名称 ,事件处理程序</span>
+    addEvent : <span class="function"><span class="keyword">function</span>(<span class="params">element, type, handler</span>) </span>{
+        <span class="keyword">if</span> (element.addEventListener) {
+            <span class="comment">//事件类型、需要执行的函数、是否捕捉</span>
+            element.addEventListener(type, handler, <span class="literal">false</span>);
+        } <span class="keyword">else</span> <span class="keyword">if</span> (element.attachEvent) {
+            element.attachEvent(<span class="string">'on'</span> + type, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{
+                handler.call(element);
+            });
+        } <span class="keyword">else</span> {
+            element[<span class="string">'on'</span> + type] = handler;
+        }
+    },
+    <span class="comment">// 移除事件</span>
+    removeEvent : <span class="function"><span class="keyword">function</span>(<span class="params">element, type, handler</span>) </span>{
+        <span class="keyword">if</span> (element.removeEnentListener) {
+            element.removeEnentListener(type, handler, <span class="literal">false</span>);
+        } <span class="keyword">else</span> <span class="keyword">if</span> (element.datachEvent) {
+            element.detachEvent(<span class="string">'on'</span> + type, handler);
+        } <span class="keyword">else</span> {
+            element[<span class="string">'on'</span> + type] = <span class="literal">null</span>;
+        }
+    }, 
+    <span class="comment">// 阻止事件 (主要是事件冒泡，因为IE不支持事件捕获)</span>
+    stopPropagation : <span class="function"><span class="keyword">function</span>(<span class="params">ev</span>) </span>{
+        <span class="keyword">if</span> (ev.stopPropagation) {
+            ev.stopPropagation();
+        } <span class="keyword">else</span> {
+            ev.cancelBubble = <span class="literal">true</span>;
+        }
+    },
+    <span class="comment">// 取消事件的默认行为</span>
+    preventDefault : <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>{
+        <span class="keyword">if</span> (event.preventDefault) {
+            event.preventDefault();
+        } <span class="keyword">else</span> {
+            event.returnValue = <span class="literal">false</span>;
+        }
+    },
+    <span class="comment">// 获取事件目标</span>
+    getTarget : <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>{
+        <span class="keyword">return</span> event.target || event.srcElement;
+    },
+    <span class="comment">// 获取event对象的引用，取到事件的所有信息，确保随时能使用event；</span>
+    getEvent : <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>{
+        <span class="keyword">var</span> ev = e || <span class="built_in">window</span>.event;
+        <span class="keyword">if</span> (!ev) {
+            <span class="keyword">var</span> c = <span class="keyword">this</span>.getEvent.caller;
+            <span class="keyword">while</span> (c) {
+                ev = c.arguments[<span class="number">0</span>];
+                <span class="keyword">if</span> (ev &amp;&amp; Event == ev.constructor) {
+                    <span class="keyword">break</span>;
+                }
+                c = c.caller;
+            }
+        }
+        <span class="keyword">return</span> ev;
+    }
+};
+</code></pre></li>
+<li><p>99%的网站都需要被重构&lt;&lt;网站重构:应用web标准进行设计&gt;&gt;</p>
+</li>
+<li><p>优雅降级和渐进增强(主要针对于浏览器)/</p>
+</li>
+<li><p>nodejs的应用场景:高并发/聊天/实时消息送达</p>
+</li>
+<li><p>web应用从服务器推送data到客户端有哪些方式:</p>
+<p>  1.html5 websoket</p>
+<p>  2.WebSoket通过flash</p>
+<p>  3.XHR长时间连接</p>
+<p>  4.XHR Multipart Streaming</p>
+<p>  5.不可见的Iframe</p>
+</li>
+</ul>
+<hr>
+<p>javascript基础:</p>
+<p>数据类型/面向对象/继承/闭包/插件/作用域/跨域/原型链/模块化/自定义事件/异步装载回调/模板引擎/nodejs/</p>
+<ul>
+<li><p>深入理解闭包:</p>
+<pre><code>         <span class="function"><span class="keyword">function</span> <span class="title">say667</span><span class="params">()</span> </span>{
+    <span class="comment">// Local variable that ends up within closure</span>
+    <span class="keyword">var</span> num = <span class="number">666</span>;
+    <span class="keyword">var</span> sayAlert = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{ alert(num); }
+    num++;
+    <span class="keyword">return</span> sayAlert;
+}
+<span class="comment">//执行say667()后,say667()闭包内部变量会存在,而闭包内部函数的内部变量不会存在.使得Javascript的垃圾回收机制GC不会收回say667()所占用的资源，因为say667()的内部函数的执行需要依赖say667()中的变量。这是对闭包作用的非常直白的描述.</span>
+</code></pre></li>
+<li><p>new操作符具体干了写什么?</p>
+<p>  1.创建空对象,this引用该对象,同时继承该对象的原型 .</p>
+<p>  2.为该引用的对象加入属性和方法</p>
+<p>  3.创建的对象由this所引用,最后隐式返回this.</p>
+</li>
+<li><p>了解json</p>
+</li>
+<li><p>js延迟加载的方式有哪些:动态创建DOM方式/按需异步载入js/defer和async</p>
+</li>
+<li><p>理解ajax的交互模型,同步和异步的区别,如何解决跨域问题</p>
+<pre><code>ajax优点:<span class="number">1</span>.通过异步模式局部刷新,提升用户体验<span class="regexp">/2.优化了浏览器和服务器之间的传输,减少了不必要的数据往返,减少了带宽的占用/</span><span class="number">3</span>.Ajax在客户端运行,承担了一部分服务器的工作,减少了大量用户下的服务器负载
+
+ajax缺点:<span class="number">1</span>.ajax不支持浏览器back按钮<span class="regexp">/2.安全问题:AJAX暴露了与服务器交互的细节/</span><span class="number">3</span>.对搜索引擎的支持比较弱<span class="regexp">/4.破坏了程序的异常机制/</span><span class="number">5</span>.不容易调用
+</code></pre></li>
+<li><p>跨域:jsonp/iframe/window.name/window.postMessage/服务器上设置代理页面</p>
+</li>
+<li><p>模块化是如何执行?</p>
+<pre><code><span class="comment">//立即执行函数,不暴露私有成员</span>
+<span class="keyword">var</span> module1 = (<span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
+    <span class="keyword">var</span> _count = <span class="number">0</span>;
+    <span class="keyword">var</span> m1 = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
+        <span class="comment">//...</span>
+    };
+    <span class="keyword">var</span> m2 = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{
+        <span class="comment">//...</span>
+    };
+    <span class="keyword">return</span> {
+            m1:m1,
+            m2:m2
+            };
+})();
+</code></pre></li>
+<li><p>document.write和innerHTML的区别:前者只能重绘整个页面,后者可以重绘页面的一部分</p>
+</li>
+<li><p>js中call()和apply()的区别?</p>
+</li>
+<li><p>jQuery中如何将数组转化为json字符串,然后再转化回来?</p>
+<pre><code>     $.fn.stringifyArray = <span class="function"><span class="keyword">function</span>(<span class="params">array</span>) </span>{
+    <span class="keyword">return</span> <span class="built_in">JSON</span>.stringify(array)
+}
+</code></pre></li>
+</ul>
+<pre><code>$.fn.parseArray = <span class="function"><span class="keyword">function</span>(<span class="params">array</span>) </span>{
+    <span class="keyword">return</span> <span class="built_in">JSON</span>.parse(array)
+} 
+
+
+然后调用：
+$(<span class="string">""</span>).stringifyArray(array)
+</code></pre><ul>
+<li>javascript的作用域和变量申明提升问题</li>
+</ul>
+<hr>
+<p>其他:</p>
+<p>HTTP/正则/优化/重构/响应式/移动端/团队协作/SEO/UED/职业生涯</p>
+<ul>
+<li><p>前端开发的优化问题:雅虎的14条军规</p>
+</li>
+<li><p>http状态码有哪些,分别代表什么意思?</p>
+<pre><code><span class="number">100-199</span> 用于指定客户端应相应的某些动作。 
+</code></pre><p>  200-299 用于表示请求成功。<br>  300-399 用于已经移动的文件并且常被包含在定位头信息中指定新的地址信息。<br>  400-499 用于指出客户端的错误。400    1、语义有误，当前请求无法被服务器理解。401   当前请求需要用户验证 403  服务器已经理解请求，但是拒绝执行它。<br>  500-599 用于支持服务器错误。 503 – 服务不可用</p>
+</li>
+<li><p>一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）</p>
+</li>
+<li><p>你所知道的页面性能优化方法有那些？</p>
+</li>
+<li><p>除了前端以外还了解什么其它技术么？你最最厉害的技能是什么？</p>
+</li>
+<li><p>AMD（Modules/Asynchronous-Definition）、CMD（Common Module Definition）规范区别？</p>
+</li>
+<li><p>谈谈你认为怎样做能使项目做的更好？</p>
+</li>
+<li><p>你对前端界面工程师这个职位是怎么样理解的？它的前景会怎么样？</p>
+</li>
+<li><p>加班的看法</p>
+</li>
+<li><p>平时如何管理你的项目，如何设计突发大规模并发架构？</p>
+<ul>
+<li><p>先期团队必须确定好全局样式（globe.css），编码模式(utf-8) 等</p>
+</li>
+<li><p>编写习惯必须一致（例如都是采用继承式的写法，单样式都写成一行）</p>
+</li>
+<li><p>标注样式编写人，各模块都及时标注（标注关键样式调用的地方）</p>
+</li>
+<li><p>页面进行标注（例如 页面 模块 开始和结束）</p>
+</li>
+<li><p>CSS跟HTML 分文件夹并行存放，命名都得统一（例如style.css）</p>
+</li>
+<li><p>JS 分文件夹存放 命民以该JS 功能为准英文翻译</p>
+</li>
+<li><p>图片采用整合的 images.png png8 格式文件使用 尽量整合在一起使用方便将来的管理</p>
+</li>
+</ul>
+</li>
+<li><p>哪些操作会导致内存泄露(内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。)</p>
+</li>
+</ul>
+<p>setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。<br>闭包、控制台日志、循环（在两个对象彼此引用且彼此保留时，就会产生一个循环）</p>
+<ul>
+<li>你说你热爱前端，那么应该WEB行业的发展很关注吧？ 说说最近最流行的一些东西吧？</li>
+</ul>
+<p>Node.js、Mongodb、npmM、MVVM、MEAN</p>
+<ul>
+<li>你有了解我们公司吗？说说你的认识？</li>
+</ul>
+<p>因为我想去阿里，所以我针对阿里的说<br>最羡慕就是在双十一购物节，350.19亿元，每分钟支付79万笔。海量数据，居然无一漏单、无一故障。太厉害了。</p>
+<ul>
+<li>移动端（比如：Android IOS）怎么做好用户体验?</li>
+</ul>
+<h4 id="前端必须掌握知识点">前端必须掌握知识点</h4><hr>
+<ol>
+<li><p>DOM结构 —— 两个节点之间可能存在哪些关系以及如何在节点之间任意移动</p>
+</li>
+<li><p>DOM操作 ——如何添加、移除、移动、复制、创建和查找节点等。</p>
+</li>
+<li><p>事件 —— 如何使用事件，以及IE和标准DOM事件模型之间存在的差别</p>
+</li>
+<li><p>XMLHttpRequest —— 这是什么、怎样完整地执行一次GET请求、怎样检测错误</p>
+</li>
+<li><p>严格模式与混杂模式 —— 如何触发这两种模式，区分它们有何意义</p>
+</li>
+<li><p>盒模型 —— 外边距、内边距和边框之间的关系，及IE8以下版本的浏览器中的盒模型</p>
+</li>
+<li><p>块级元素与行内元素 —— 怎么用CSS控制它们、以及如何合理的使用它们</p>
+</li>
+<li><p>浮动元素——怎么使用它们、它们有什么问题以及怎么解决这些问题</p>
+</li>
+<li><p>HTML与XHTML——二者有什么区别，你觉得应该使用哪一个并说出理由</p>
+</li>
+<li><p>JSON —— 作用、用途、设计结构</p>
+</li>
+</ol>
+<hr>
+<h1 id="创建时间-2015-5-31">创建时间.2015.5.31</h1><p>=================         by kevinwang       =========================</p>
+<h1 id="=================_转载请附上链接地址_====================">=================      转载请附上链接地址         ====================</h1>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2015/05/30/hello-world/">
+        Hello World →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2015/06/02/前端知识梳理-1/" data-title="前端知识梳理_1" data-url="http://yoursite.com/2015/06/02/前端知识梳理-1/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"hexoblog04"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By kevinwang. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'hexoblog';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+</body>
+</html>
